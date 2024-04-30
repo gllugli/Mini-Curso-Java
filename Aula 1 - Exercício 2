@@ -1,0 +1,30 @@
+package MiniCurso;
+
+import java.util.Scanner;
+
+public class Ex02 {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		int a = 0, b = 0, c = 0, d = 0;
+		
+		System.out.printf("\nDigite A: ");
+		a = input.nextInt();
+		
+		System.out.printf("\nDigite B: ");
+		b = input.nextInt();
+		
+		System.out.printf("\nDigite C: ");
+		c = input.nextInt();
+		
+		System.out.printf("\nDigite D: ");
+		d = input.nextInt();
+		
+		System.out.printf("\nDiferença: %d", ((a * b) - (c * d)));
+		
+		input.close();
+	}
+
+}
