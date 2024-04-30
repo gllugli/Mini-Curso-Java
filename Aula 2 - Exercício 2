@@ -1,0 +1,35 @@
+package MiniCurso;
+
+import java.util.Scanner;
+
+public class Ex03 {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		double x = 0.0, y = 0.0;
+		
+		System.out.printf("\nDigite X: ");
+		x = input.nextDouble();
+
+		System.out.printf("\nDigite Y: ");
+		y = input.nextDouble();
+		
+		if (x > 0.0 && y > 0.0) {
+			System.out.printf("\nO ponto está no Quadrante Q1.");
+		} else if (x < 0.0 && y > 0.0) {
+			System.out.printf("\nO ponto está no Quadrante Q2.");
+		} else if (x < 0.0 && y < 0.0) {
+			System.out.printf("\nO ponto está no Quadrante Q3.");
+		} else if (x > 0.0 && y < 0.0) {
+			System.out.printf("\nO ponto está no Quadrante Q4.");
+		} else { 
+			System.out.printf("\nO ponto está na Origem.");
+		}
+		
+		
+		input.close();
+	}
+
+}
