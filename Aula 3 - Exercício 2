@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+        
+        int num = 0;
+        
+        Scanner ler = new Scanner(System.in);
+        
+        System.out.printf("\nDigite um número: ");
+        num = ler.nextInt();
+        
+        div2(num);
+        
+	}
+	
+    public static int div2 (int x) {
+        
+        if (x % 2 == 0) {
+            System.out.printf("\nO número %d é divisível por 2.", x);
+        } else {
+            System.out.printf("\nO número não é divisível por 2.");
+        }
+        
+        return x;
+    }
+}
