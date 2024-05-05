@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+        
+        int num1 = 0, num2 = 0;
+        
+        Scanner ler = new Scanner(System.in);
+        
+        System.out.printf("\nDigite o primeiro valor: ");
+        num1 = ler.nextInt();
+        
+        System.out.printf("\nDigite o segundo valor: ");
+        num2 = ler.nextInt();
+        
+        multiplicacao(num1, num2);
+	}
+	
+	public static int multiplicacao(int x, int y) {
+	    
+	    int mult = x * y;
+	    
+	    System.out.printf("\nMultiplicação: %d", mult);
+	    
+	    return mult;
+	}
+}
